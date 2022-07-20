@@ -4,6 +4,7 @@ import { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { CategoriesContext } from '../../contexts/categories.context';
 import ProductCard from '../ProductCard';
+import Loader from '../Loader';
 import Footer from '../Footer';
 
 const Category = () => {
@@ -20,15 +21,15 @@ const Category = () => {
       <div className='shop'>
         <div className='shop__section'>
           <h1 className='shop__category shop__category--individual'>{category} gifts</h1>
-          <div className='product-group product-group--individual'>
-            {products ? (
-              products.map((product) => (
+          {!products ? (
+            <Loader />
+          ) : (
+            <div className='product-group product-group--individual'>
+              {products.map((product) => (
                 <ProductCard product={product} key={product.id} preview={false} />
-              ))
-            ) : (
-              <p>Loading Products...</p>
-            )}
-          </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
       <Footer />
