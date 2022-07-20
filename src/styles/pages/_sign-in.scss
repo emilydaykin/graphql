@@ -1,0 +1,36 @@
+.signInPage {
+  // border: 2px solid green;
+  display: flex;
+  width: 90%;
+  max-width: 145rem;
+  margin: 10rem auto;
+  justify-content: space-around;
+
+  h2 {
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  span {
+    margin-bottom: 2.5rem;
+    font-size: 1.75rem;
+
+    strong {
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .signInPage {
+    margin: 2.75rem auto;
+  }
+}
+
+@media (max-width: 925px) {
+  .signInPage {
+    flex-direction: column;
+    // text-align: center;
+  }
+}

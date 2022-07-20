@@ -1,0 +1,70 @@
+.form {
+  // border: 2px solid orange;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  width: 100%;
+  // margin-top: 1.5rem;
+
+  &__element {
+    display: flex;
+    flex-direction: column;
+    // position: relative;
+  }
+
+  &__label {
+    margin-bottom: 2.25rem;
+    margin-left: .75rem; // matching the input left padding
+    color: $theme-grey-light;
+    font-size: 1.4rem;
+    transition: all .5s;
+    // position: absolute;
+    // top: -2rem;
+  }
+
+  &__input {
+    width: 45rem;
+    padding: .75rem;
+    font-family: inherit;
+    font-size: 1.65rem;
+    margin-bottom: .75rem;
+    border: none;
+    border-bottom: 1px solid $theme-grey-dark;
+    
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__input:placeholder-shown + &__label {
+    // next adjacent sibling selector (+): immediately after. Use ~ if there are more siblings in between
+    opacity: 0; // without this, we can't animate it if it's just not there
+    visibility: hidden; // if just `opacity:0`, then it's still there
+    transform: translateY(-4rem);
+  }
+
+}
+
+@media (max-width: 1050px) {
+  .form {
+    &__input {
+      width: 39rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .form {
+    &__input {
+      width: 30rem;
+    }
+  }
+}
+
+@media (max-width: 395px) {
+  .form {
+    &__input {
+      width: 23rem;
+    }
+  }
+}

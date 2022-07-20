@@ -1,0 +1,74 @@
+.button {
+  width: 20rem; 
+  font-family: inherit;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  padding: 1.75rem 4rem;
+  border: 1px solid $theme-grey-dark;
+  border-radius: $default-border-radius;
+  background-color: $theme-white;
+  box-shadow: 0 1rem 2rem rgba($theme-black, .1);
+  transition: all .1s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $theme-white;
+    color: $theme-grey-dark;
+  }
+
+  &:active {
+    transform: scale(.97);
+  }
+
+  &--register, &--log-in {
+    margin-top: 1rem;
+    background-color: $theme-grey-dark;
+    color: $theme-white;
+  }
+
+  &--google {
+    margin-top: 4rem;
+    width: 39rem;
+    background-color: $theme-blue-grey;
+    border: 1px solid $theme-blue-grey;
+    color: $theme-white;
+
+    &:hover {
+      background-color: $theme-white;
+      color: $theme-blue-grey;
+    }
+  }
+
+  &--disallowed {
+    background-color: $theme-grey-light;
+    border: 1px solid $theme-grey-light;
+    
+    &:hover {
+      cursor: not-allowed;
+      background-color: $theme-grey-light;
+      border: 1px solid $theme-grey-light;
+      color: $theme-white;
+    }
+
+    &:active {
+      transform: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .button {
+          &--google {
+                width: 33rem;
+          }
+        }
+}
+
+@media (max-width: 395px) {
+  .button {
+      &--google {
+        width: 27rem;
+      }
+    }
+}

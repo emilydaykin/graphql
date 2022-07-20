@@ -1,0 +1,24 @@
+.register {
+  display: flex;
+  flex-direction: column;
+
+  &__error-message {
+    color: $error-red;
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width: 925px) {
+  .register {
+    margin: 0 auto;
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .register {
+    margin: 0 2.5rem;
+    margin-top: 6rem;
+  }
+}

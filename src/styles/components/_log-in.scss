@@ -1,0 +1,22 @@
+.logIn {
+  display: flex;
+  flex-direction: column;
+
+  &__error-message {
+    color: $error-red;
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width: 925px) {
+  .logIn {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .logIn {
+    margin: 0 2rem;
+  }
+}
