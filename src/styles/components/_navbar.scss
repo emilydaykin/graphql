@@ -61,6 +61,16 @@
     font-size: 3.5rem;
     font-weight: 300;
     letter-spacing: .3rem;
+    position: relative;
+  }
+
+  &__sub-heading {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1.6rem;
+    color: $theme-grey-light;
+    text-transform: capitalize;
   }
 }
 
@@ -125,6 +135,10 @@
 
     &__sub-link {
       font-size: .85rem;
+    }
+
+    &__sub-heading {
+      bottom: .75rem;
     }
   }
 }

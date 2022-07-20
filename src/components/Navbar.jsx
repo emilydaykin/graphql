@@ -36,6 +36,7 @@ const Navbar = () => {
         >
           <GiftLogo className='navbar__logo' />
           <h1 className='navbar__heading'>Gifter</h1>
+          <p className='navbar__sub-heading'>GraphQL edition</p>
         </Link>
         <div className='navbar__links'>
           <Link
