@@ -27,7 +27,7 @@ const LogIn = () => {
 
   const handleLogIn = async (event) => {
     event.preventDefault();
-    console.log('login clicked');
+    // console.log('login clicked');
 
     try {
       await signUserInWithEmailAndPassword(formData.logInEmail, formData.logInPassword);

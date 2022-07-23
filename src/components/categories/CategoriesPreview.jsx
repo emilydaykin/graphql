@@ -10,7 +10,7 @@ const CategoriesPreview = () => {
   const navigate = useNavigate();
 
   const redirectToCategory = (category) => {
-    console.log(`${category} category clicked`);
+    // console.log(`${category} category clicked`);
     navigate(`/shop/${category}`);
   };
 

@@ -30,22 +30,6 @@ export const CategoriesProvider = ({ children }) => {
   const { loading, error, data } = useQuery(COLLECTIONS);
   const [categoriesMap, setCategoriesMap] = useState({});
 
-  // console.log('loading:', loading);
-  // console.log('data:', data);
-
-  // --- NO LONGER USING THIS NOW (fetching from firebase) SINCE WE'RE USING GRAPHQL --- //
-  // useEffect(() => {
-  //   // Uncomment to add items to DB
-  //   // addCollectionAndDocuments('categories', allProducts); // 'categories' is the name i want for the collection
-
-  //   const getCategoriesMap = async () => {
-  //     const categoryMap = await getCategoriesAndDocuments();
-  //     // console.log('categoryMap', categoryMap);
-  //     setCategoriesMap(categoryMap);
-  //   };
-  //   getCategoriesMap();
-  // }, []);
-
   useEffect(() => {
     if (data) {
       const { collections } = data;

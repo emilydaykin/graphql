@@ -26,7 +26,7 @@ const Register = () => {
 
   const handleRegister = async (event) => {
     event.preventDefault();
-    console.log('register clicked');
+    // console.log('register clicked');
 
     if (formData.registerPassword !== formData.passwordConfirmation) {
       setErrorMessage('Passwords do not match.');

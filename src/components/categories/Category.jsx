@@ -31,7 +31,6 @@ const Category = () => {
     }
   });
 
-  console.log('DATAAAA:', data);
   useEffect(() => {
     if (data) {
       // nested destructure
