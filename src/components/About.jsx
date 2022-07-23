@@ -16,14 +16,14 @@ const About = () => {
             <h1 className='about__heading'>About</h1>
             <p className='about__text'>
               Treat yourself to a wide variety of hats, jackets, shoes and styles for women and men,
-              any time of year! Browse inspiring articles of clothing, and add your products to the
+              any time of year! Browse inspiring articles of clothing, add your products to the
               cart, then navigate to the Checkout to see all your selected products!
             </p>
           </div>
           <div className='about__contact'>
             <h1 className='about__heading'>Contact</h1>
             <p>
-              This site was designed and created by <strong>Emily Daykin</strong> (The&nbsp;
+              This site was designed and created by <strong>Emily Daykin</strong> (the&nbsp;
               <a href='https://crwn-clothing.com/' target='_blank' rel='noreferrer'>
                 GraphQL server and data,
               </a>
