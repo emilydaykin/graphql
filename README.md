@@ -3,8 +3,10 @@
 This app wraps **GraphQL** and **Apollo** around [Gifter v1](https://github.com/emilydaykin/Gifter/tree/v1) with minor styling adjustments. The goal of this spin-off repo was to practise integrating GraphQL on the front end via Apollo Client, and writing queries to fetch data from a provided server.
 
 <p align="center">
-  <img src="./src/assets/home_page.png" width="90%" />
+  <img src="./src/assets/home-page.png" width="90%" />
 </p>
+
+(Check out the [final version of Gifter](https://giftsbygifter.netlify.app/) - non-GraphQL edition which additionally uses TypeScript, Redux and Stripe - and the corresponding repo [README](https://github.com/emilydaykin/Gifter/blob/main/README.md).)
 
 ## Installation:
 This application is not deployed. To see it in action, run it locally:
@@ -14,7 +16,7 @@ This application is not deployed. To see it in action, run it locally:
 
 ## Code Snippets:
 
-#### Wrapping GraphQL around the App using Apollo Client 
+### Wrapping GraphQL around the App using Apollo Client 
 ```javascript
 const client = new ApolloClient({
   uri: 'https://crwn-clothing.com/',
@@ -34,7 +36,7 @@ root.render(
 
 ```
 
-#### Fetching all categories from database in React Context
+### Fetching all categories from database in React Context
 ```javascript
 import { createContext, useState, useEffect } from 'react';
 import { gql, useQuery } from '@apollo/client';
@@ -80,7 +82,7 @@ export const CategoriesProvider = ({ children }) => {
 
 ```
 
-#### Dynamically fetching (via useParams) a specific category (using query variables) from database
+### Dynamically fetching (via useParams) a specific category (using query variables) from database
 ```javascript
 ...
 import { gql, useQuery } from '@apollo/client';
@@ -125,6 +127,14 @@ const Category = () => {
   )
 }
 ```
+
+## GraphQL Playground:
+
+Sample query in the provided GraphQL playground using provided server:
+
+<p align="center">
+  <img src="./src/assets/gql-playground.png" width="95%" />
+</p>
 
 ## Challenges:
 The way the [Apollo Client URI](https://crwn-clothing.com/) was created was quite black-box to me. I tried replicating it by learning about Prisma as a layer between my Firestore database (where my Gifter [data](https://github.com/emilydaykin/Gifter/blob/main/src/data/shop-data.js) sits) and this client application, but I haven't yet found a way to link my Firestore to Prisma (to create a GraphQL Playground and Server) to then link to Apollo GraphQL in the front end.
