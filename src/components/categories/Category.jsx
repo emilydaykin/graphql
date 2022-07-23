@@ -47,7 +47,7 @@ const Category = () => {
     <>
       <div className='shop'>
         <div className='shop__section'>
-          <h1 className='shop__category shop__category--individual'>{category} gifts</h1>
+          <h1 className='shop__category shop__category--individual'>{category}</h1>
           {loading || !products ? (
             <Loader />
           ) : (

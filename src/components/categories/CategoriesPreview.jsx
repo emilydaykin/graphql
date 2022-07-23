@@ -23,7 +23,7 @@ const CategoriesPreview = () => {
           Object.keys(categoriesMap).map((title) => (
             <div key={title} className='shop__section'>
               <h1 className='shop__category'>
-                {title} gifts <span onClick={() => redirectToCategory(title)}>&rarr;</span>
+                {title} <span onClick={() => redirectToCategory(title)}>&rarr;</span>
               </h1>
               <CategoryCarousel categoriesMap={categoriesMap} title={title} />
             </div>
