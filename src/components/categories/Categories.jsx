@@ -1,42 +1,41 @@
-// import React from 'react';
 import CategoryPoster from './CategoryPoster';
 
 const Categories = () => {
   const categories = [
     {
       id: 1,
-      key: 'birthday',
-      title: 'Birthday',
+      key: 'hats',
+      title: 'Hats',
       imageURL:
-        'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmlydGhkYXl8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
+        'https://images.unsplash.com/photo-1533055640609-24b498dfd74c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGF0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'
     },
     {
       id: 2,
-      key: 'christmas',
-      title: 'Christmas',
+      key: 'jackets',
+      title: 'Jackets',
       imageURL:
-        'https://images.unsplash.com/photo-1451772741724-d20990422508?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+        'https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8amFja2V0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'
     },
     {
       id: 3,
-      key: 'anniversary',
-      title: 'Anniversary',
+      key: 'mens',
+      title: 'Mens',
       imageURL:
-        'https://images.unsplash.com/photo-1517837125937-53bd402f49d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHZhbGVudGluZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'
+        'https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWVucyUyMGNsb3RoaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
     },
     {
       id: 4,
-      key: 'thank you',
-      title: 'Thank You',
+      key: 'sneakers',
+      title: 'Sneakers',
       imageURL:
-        'https://images.unsplash.com/photo-1499744937866-d7e566a20a61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHRoYW5rJTIweW91fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=600'
+        'https://images.unsplash.com/photo-1588273565869-a06552c35ef5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzd8fHNuZWFrZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
     },
     {
       id: 5,
-      key: 'wedding',
-      title: 'Wedding',
+      key: 'womens',
+      title: 'Womens',
       imageURL:
-        'https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2VkZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'
+        'https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d29tZW5zJTIwY2xvdGhpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
     }
   ];
 
