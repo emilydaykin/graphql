@@ -15,17 +15,20 @@ const About = () => {
           <div className='about__description'>
             <h1 className='about__heading'>About</h1>
             <p className='about__text'>
-              Unsure of what to get your friends, family or colleagues for a special occasion? Use
-              Gifter to find the right present for Christmas, their birthday, wedding day, your
-              anniversary or simply as a thank you token. Browse inspiring gifts for your loved
-              ones, any time of year!
+              Treat yourself to a wide variety of hats, jackets, shoes and styles for women and men,
+              any time of year! Browse inspiring articles of clothing, and add your products to the
+              cart, then navigate to the Checkout to see all your selected products!
             </p>
           </div>
           <div className='about__contact'>
             <h1 className='about__heading'>Contact</h1>
             <p>
-              This site was designed and created by <strong>Emily Daykin</strong>. Get in touch to
-              leave any feedback, collaborate, or to say hello!
+              This site was designed and created by <strong>Emily Daykin</strong> (The&nbsp;
+              <a href='https://crwn-clothing.com/' target='_blank' rel='noreferrer'>
+                GraphQL server and data,
+              </a>
+              &nbsp;however, are taken from Zero To Mastery.) Get in touch to leave any feedback,
+              collaborate, or to say hello!
             </p>
             <div className='about__contact-links'>
               <a href='https://github.com/emilydaykin'>
@@ -45,15 +48,9 @@ const About = () => {
               <a href='https://sass-lang.com/'>
                 <img className='about__icon' src={sassLogo} alt='Sass' />
               </a>
-              {/* <a href='#'>
-                <img className='about__icon' src={jestLogo} alt='Jest' />
-              </a> */}
               <a href='https://firebase.google.com/'>
                 <img className='about__icon' src={firebaseLogo} alt='Firebase' />
               </a>
-              {/* <a href='#'>
-                <img className='about__icon' src={stripeLogo} alt='Stripe' />
-              </a>*/}
               <a href='https://graphql.org/'>
                 <img className='about__icon' src={graphqlLogo} alt='GraphQL' />
               </a>

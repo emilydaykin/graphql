@@ -29,6 +29,11 @@
     margin-left: 1.5rem;
     display: flex;
     flex-direction: column;
+
+    p a {
+      text-decoration: none;
+      color: $theme-grey-light;
+    }
   }
 
   &__contact-links {
@@ -48,6 +53,7 @@
 
   &__link {
     height: 5rem;
+    margin-top: 1rem;
   }
 
   &__icons {
