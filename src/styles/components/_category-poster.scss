@@ -1,5 +1,5 @@
 .category-poster {
-  height: 50vh;
+  height: 30rem;
   margin: 1.5rem;
   border-radius: $default-border-radius;
   overflow: hidden;
@@ -42,17 +42,17 @@
     }
   }
 
-  &--birthday, &--christmas {
+  &--hats, &--jackets {
     grid-column: span 3;
   }
 }
 
 @media (max-width: 1270px) {
   .category-poster {
-    &--birthday,
-    &--christmas, 
-    &--thank, 
-    &--wedding {
+    &--hats,
+    &--jackets, 
+    &--sneakers, 
+    &--womens {
       grid-column: span 1;
     }
   }
