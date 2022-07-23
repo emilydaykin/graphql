@@ -6,7 +6,7 @@ import Loader from '../Loader';
 import Footer from '../Footer';
 
 const CategoriesPreview = () => {
-  const { categoriesMap } = useContext(CategoriesContext);
+  const { categoriesMap, loading } = useContext(CategoriesContext);
   const navigate = useNavigate();
 
   const redirectToCategory = (category) => {
@@ -17,7 +17,7 @@ const CategoriesPreview = () => {
   return (
     <>
       <div className='shop'>
-        {Object.keys(categoriesMap).length === 0 ? (
+        {loading ? (
           <Loader />
         ) : (
           Object.keys(categoriesMap).map((title) => (
