@@ -6,7 +6,7 @@ This app wraps **GraphQL** and **Apollo** around [Gifter v1](https://github.com/
   <img src="./src/assets/home-page.png" width="90%" />
 </p>
 
-(Check out the [final version of Gifter](https://giftsbygifter.netlify.app/) - non-GraphQL edition which additionally uses TypeScript, Redux and Stripe - and the corresponding repo [README](https://github.com/emilydaykin/Gifter/blob/main/README.md).)
+(Check out the [final version of Gifter](https://giftsbygifter.netlify.app/) - non-GraphQL edition that's built with TypeScript, Redux and Stripe on top of React, Sass and Firebase - and the corresponding repo [README](https://github.com/emilydaykin/Gifter/blob/main/README.md).)
 
 ## Installation:
 This application is not deployed. To see it in action, run it locally:
@@ -130,7 +130,7 @@ const Category = () => {
 
 ## GraphQL Playground:
 
-Sample query in the provided GraphQL playground using provided server:
+Sample query in a GraphQL playground using a provided server:
 
 <p align="center">
   <img src="./src/assets/gql-playground.png" width="95%" />
