@@ -11,7 +11,7 @@ const Footer = () => {
         <Link className='footer__link' to={location.pathname === '/about' ? '#' : '/about'}>
           Emily Daykin
         </Link>{' '}
-        &#x7E; Copyright &copy; 2022
+        (Data from Zero To Mastery) &#x7E; Copyright &copy; 2022
       </p>
     </footer>
   );
